@@ -7,7 +7,7 @@
     printf("%s", #testFunction); \
     fflush(stdout); \
     testFunction ; \
-    printf("\r%s \t OK\n\n", #testFunction)
+    printf("\r%s \t OK\n", #testFunction)
 
 #define EXPECT_EQ(expected, result) \
     if (expected != result) \
